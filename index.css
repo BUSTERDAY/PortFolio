@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'inter';
+    src: url('/FRONTEND/ASSETS/FONT/inter/Inter-VariableFont_slnt,wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    background-color: #272727;
+    font-family: 'inter';
+    color: white;
+    overflow-x: hidden;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #342929;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+header h1 {
+    color: #629AEE;
+    padding-top: 30px;
+    font-size: 5em;
+    padding-bottom: 30px;
+}
+
+/* Fin header */
+
+/* Contenu */
+
+.content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    top: 75px;
+    z-index: 1;
+}
+
+.content h1 {
+    color: #FFFFFF;
+    margin: 25px;
+    font-size: 3em;
+}
+
+.content h2 {
+    color: #FFFFFF;
+    margin: 20px;
+    font-size: 2.25em;
+}
+
+.content p {
+    color: #FFFFFF;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+/* Fin contenu */
+
+@media screen and (max-width: 1024px) {
+
+    * {
+        text-align: center;
+    }
+
+    .background {
+        height: 100%;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Contenu */
+
+    .content {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        z-index: 1;
+    }
+}
